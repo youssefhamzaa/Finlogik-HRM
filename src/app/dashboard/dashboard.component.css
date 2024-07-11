@@ -1,0 +1,138 @@
+  .dashboard {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .row {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .well {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 1;
+  }
+  
+  .large-box {
+    flex: 2;
+  }
+  
+  .medium-box {
+    flex: 1;
+  }
+  
+  .small-box {
+    flex: 0.5;
+  }
+  
+
+  
+  .scrollable-box table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .scrollable-box table th,
+  .scrollable-box table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .scrollable-box table th {
+    background-color: #f4f4f4;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+  }
+  
+  .scrollable-box table tbody {
+    display: block;
+    max-height: 200px; /* Adjust to control the scrolling area */
+    overflow-y: auto;
+  }
+  
+  .scrollable-box table thead,
+  .scrollable-box table tbody tr {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+  }
+  
+  .scrollable-box table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .scrollable-box::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  .scrollable-box::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 4px;
+  }
+  
+  .scrollable-box::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+  }
+  
+  @media (max-width: 768px) {
+    .content {
+      margin-left: 0;
+    }
+  
+    .row {
+      flex-direction: column;
+    }
+  }
+/* ////// */
+.stats {
+  display: inline-grid;
+  background-color: #111111;
+  color: #fff;
+  border-radius: 1rem;
+  object-fit: cover;
+  border: 1px solid gray;
+}
+
+.shadow {
+  box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+}
+
+.stat {
+  display: inline-grid;
+  width: 100%;
+  grid-template-columns: repeat(1, 1fr);
+  column-gap: 1rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.stat-title {
+  grid-column-start: 1;
+  white-space: nowrap;
+  color: rgb(197, 194, 194);
+}
+
+.stat-value {
+  grid-column-start: 1;
+  white-space: nowrap;
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  font-weight: 800;
+}
+
+.stat-desc {
+  grid-column-start: 1;
+  white-space: nowrap;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  color: rgb(197, 194, 194);
+}
+  

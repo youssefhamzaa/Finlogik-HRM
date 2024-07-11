@@ -1,0 +1,15 @@
+<div class="content">
+      <div>
+        <button (click)="showForm()">Apply for a leave</button>
+        <section *ngIf="isFormVisible" class="section_form">
+          <form id="consultation-form" class="feed-form" action="#">
+            <input required="" placeholder="Employee Name*" type="text">
+            <input required="" placeholder="Leave Type*" type="text">
+            <input required="" placeholder="Leave Reason*" type="text">
+            <input id="startDate" type="date"  name="startDate" required>
+            <input id="startDate" type="date"  name="endDate" required>
+            <button class="button_submit">Submit</button>
+          </form>
+        </section>
+      </div>
+</div>

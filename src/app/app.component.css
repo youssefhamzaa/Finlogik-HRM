@@ -1,0 +1,13 @@
+.content {
+    margin-left: 260px; /* Adjust this based on your sidebar width */
+    padding: 20px; /* Adjust padding as needed */
+    background-image: url("/assets/main.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: margin-left 0.4s ease;
+    overflow: hidden;
+    min-height: 100vh; /* Ensure it covers the entire viewport height */
+    height: 100%;
+    width: calc(100% - 260px); /* Adjust width based on sidebar width */
+}

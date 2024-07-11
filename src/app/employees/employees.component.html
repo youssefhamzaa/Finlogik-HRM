@@ -1,0 +1,99 @@
+<div class="employee-container">
+  <div   class="cards-container">
+    <div class="card">
+      <div class="card-border-top"></div>
+      <div class="img">
+        <img src="/assets/DSC_0480.JPG" alt="">
+      </div>
+      <span>Youssef Hamza</span>
+      <p class="job">Intern</p>
+      <button>Click</button>
+    </div>
+    <div class="card">
+      <div class="card-border-top"></div>
+      <div class="img"></div>
+      <span>Eric Campbell</span>
+      <p class="job">IT systems architect</p>
+      <button>Click</button>
+    </div>
+    <div class="card">
+      <div class="card-border-top"></div>
+      <div class="img"></div>
+      <span>Vincent Peo</span>
+      <p class="job">IT systems architect</p>
+      <button>Click</button>
+    </div>
+    <div class="card">
+      <div class="card-border-top"></div>
+      <div class="img">
+        <img src="/assets/bouba.png" alt="">
+      </div>
+      <span>Zaineb Siala</span>
+      <p class="job">IT systems architect</p>
+      <button>Click</button>
+    </div>
+    <div class="card">
+      <div class="card-border-top"></div>
+      <div class="img"></div>
+      <span>Joey Wolf</span>
+      <p class="job">IT systems architect</p>
+      <button>Click</button>
+    </div>
+    <div class="card">
+      <div class="card-border-top"></div>
+      <div class="img"></div>
+      <span>Parker Hodges</span>
+      <p class="job">IT systems architect</p>
+      <button>Click</button>
+    </div>
+    <div class="card">
+      <div class="card-border-top"></div>
+      <div class="img"></div>
+      <span>Lrizz Devil</span>
+      <p class="job">IT systems architect</p>
+      <button>Click</button>
+    </div>
+    <div class="card">
+      <div class="card-border-top"></div>
+      <div class="img"></div>
+      <span>Simon Dunne</span>
+      <p class="job">IT systems architect</p>
+      <button>Click</button>
+    </div>
+    <div class="card">
+      <div class="card-border-top"></div>
+      <div class="img">
+        <img src="/assets/476844.png" alt="test">
+      </div>
+      <span>‎ </span>
+      <p class="job">‎ </p>
+      <button (click)="showForm()">Add Employee</button>
+    </div>
+  </div>
+</div>
+<div>
+  <section *ngIf="isFormVisible" class="section_form">
+    <form id="consultation-form" class="feed-form" action="#">
+      <input required="" placeholder="First Name*" type="text">
+      <input required="" placeholder="Last Name*" type="text">
+      <div class="gender-card">
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male" class="gender male">Male</label>
+        
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female" class="gender female">Female</label>
+      </div>
+      <input id="profilePicture" type="file"/>
+      <input required="" placeholder="Job Title*" type="text">
+      <input name="phone" required="" placeholder="Phone number*">
+      <input name="email" required="" placeholder="E-mail*" type="email">
+      <input required type="text" placeholder="Adress 1*">
+      <input  type="text" placeholder="Adress 2">
+      <input type="text" placeholder="Zip Code*">
+      
+
+      <button class="button_submit">Submit</button>
+    </form>
+  </section>
+</div>
+
